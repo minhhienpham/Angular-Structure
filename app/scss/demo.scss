@@ -1,0 +1,11 @@
+@mixin required {
+    font-size: 13px;
+    font-weight: bold;
+    color: red;
+}
+
+.required{
+    @include required;
+    padding: 6px;
+    margin: 9px;
+}

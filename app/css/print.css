@@ -1,0 +1,6 @@
+#container {
+  width: 69%; }
+  #container p, #container div {
+    font-size: 69px; }
+    #container p a, #container div a {
+      font-weight: bold; }
