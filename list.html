@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="firstApp">
+   <head>
+      <script src="D:/Study/PHP/angular/angularDemo/lib/js/angular.min.js"></script>
+      <script src="D:/Study/PHP/angular/angularDemo/angular/init.js"></script>
+      <script src="D:/Study/PHP/angular/angularDemo/angular/listFbController.js"></script>
+	  <link rel="stylesheet" type="text/css" href="stylesheet/css/index.css">
+	  <link rel="stylesheet" type="text/css" href="stylesheet/css/bootstrap.min.css">
+   </head>
+   <body >
+	<div ng-controller="listFbController">
+		<h1 class="fBForm">List Feedback</h1>
+		<table class="table table-bordered table-striped table-hover fbTable">
+		  <thead>
+		    <tr>
+		      <th class="text-center">Email</th>
+		      <th class="text-center">Messsage</th>
+		      <!-- <th class="text-center" style="width: 84px;">Delete</th> -->
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr ng-repeat = "data in datas">
+			    <td class="text-center">{{data.email}}</td>
+				<td class="text-center">{{data.message}}</td>
+				<!-- <td class="text-center"><button type="button" class="btn btn-default">DELETE</button></td> -->
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+   </body>
+</html>
